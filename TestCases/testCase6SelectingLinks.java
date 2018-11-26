@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.Select;;
 
-public class starterBase {
+public class testCase6SelectingLinks {
 
 	public static void main(String[] args) {
 		
@@ -15,10 +15,13 @@ public class starterBase {
 		WebDriver driver = new FirefoxDriver();
 		
 		
-		String appUrl = "http://demo.guru99.com/test/facebook.html";
+		String appUrl = "http://demo.guru99.com/test/link.html";
 		
 		// launch the firefox browser and open the application url
 		driver.get(appUrl);
+		
+		//this will click the firdst link that has the click here text
+		driver.findElement(By.linkText("click here")).click();
 		
 		
 		
