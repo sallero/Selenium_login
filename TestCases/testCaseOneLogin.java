@@ -1,4 +1,4 @@
-package test1_login;
+package TestCases;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
